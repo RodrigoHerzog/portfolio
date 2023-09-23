@@ -20,6 +20,7 @@ import { IoMailSharp, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
+import profileImg from '../public/images/perfil.jpeg'
 
 const Home = () => {
   return (
@@ -46,7 +47,7 @@ const Home = () => {
               overflow="hidden"
             >
               <ProfileImage
-                src="./perfil.jpeg"
+                src={profileImg}
                 alt="Imagem de perfil"
                 borderRadius="full"
                 width="100%"
