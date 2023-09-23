@@ -1,3 +1,3 @@
-# Rodrigo Herzog Portfolio
+# Rodrigo Herzog - Portfólio
 
-Simple portfolio in react.
+Portfólio simples em react.

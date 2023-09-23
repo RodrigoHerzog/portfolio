@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic'
 import Navbar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import VoxelCmdLoader from '../voxel-cmd-loader'
-import Footer from '../footer'
 
 const LazyVoxelCmd = dynamic(() => import('../voxel-cmd'), {
   ssr: false,
@@ -30,8 +29,6 @@ const Main = ({ children, router }) => {
         <LazyVoxelCmd />
 
         {children}
-
-        <Footer />
       </Container>
     </Box>
   )

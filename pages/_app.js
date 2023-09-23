@@ -27,5 +27,5 @@ const Website = ({ Component, pageProps, router }) => {
     </Chakra>
   )
 }
-
+export { getServerSideProps } from '../components/chakra'
 export default Website

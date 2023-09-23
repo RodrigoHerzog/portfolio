@@ -13,12 +13,12 @@ const VoxelCmd = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
+  const [target] = useState(new THREE.Vector3(0, 1.75, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      20 * Math.sin(0.2 * Math.PI),
-      10,
-      20 * Math.cos(0.2 * Math.PI)
+      30 * Math.sin(0.2 * Math.PI),
+      20,
+      30 * Math.cos(0.2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
@@ -51,9 +51,7 @@ const VoxelCmd = () => {
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
-      // 640 -> 240
-      // 8   -> 6
-      const scale = scH * 0.005 + 4.8
+      const scale = scH * 0.005 + 7
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -66,11 +64,13 @@ const VoxelCmd = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
+      const ambientLight = new THREE.AmbientLight(0xcccccc, 1.75)
       scene.add(ambientLight)
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
+      controls.autoRotateSpeed = 6
+      controls.enableDamping = true
       controls.target = target
       setControls(controls)
 
@@ -84,6 +84,7 @@ const VoxelCmd = () => {
 
       let req = null
       let frame = 0
+
       const animate = () => {
         req = requestAnimationFrame(animate)
 
@@ -91,7 +92,7 @@ const VoxelCmd = () => {
 
         if (frame <= 100) {
           const p = initialCameraPosition
-          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
+          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 10
 
           camera.position.y = 10
           camera.position.x =
