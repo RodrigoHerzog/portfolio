@@ -17,6 +17,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Paragraph from '../components/paragraph'
 import Image from 'next/image'
 import { IoMailSharp, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { assetPrefix } from '../next.config'
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
@@ -46,7 +47,7 @@ const Home = () => {
               overflow="hidden"
             >
               <ProfileImage
-                src="/../public/images/perfil.jpeg"
+                src={`${assetPrefix}/images/perfil.jpeg`}
                 alt="Imagem de perfil"
                 borderRadius="full"
                 width="100%"
