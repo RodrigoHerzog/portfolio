@@ -11,12 +11,12 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/projeto'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
-import rockethelp1Img from '../../../public/images/projetos/rockethelp_1.png'
-import rockethelp2Img from '../../public/images/projetos/rockethelp_2.png'
-import rockethelp3Img from '../../public/images/projetos/rockethelp_3.png'
-import rockethelp4Img from '../../public/images/projetos/rockethelp_4.png'
-import rockethelp5Img from '../../public/images/projetos/rockethelp_5.png'
-import rockethelp6Img from '../../public/images/projetos/rockethelp_6.png'
+import rockethelp1Img from './images/projetos/rockethelp_1.png'
+import rockethelp2Img from './images/projetos/rockethelp_2.png'
+import rockethelp3Img from './images/projetos/rockethelp_3.png'
+import rockethelp4Img from './images/projetos/rockethelp_4.png'
+import rockethelp5Img from './images/projetos/rockethelp_5.png'
+import rockethelp6Img from './images/projetos/rockethelp_6.png'
 
 const Projeto = () => (
   <Layout title="RocketHelp">
