@@ -16,7 +16,7 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Portfólio - Rodrigo Herzog" />
         <meta name="author" content="Rodrigo Herzog" />
-        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="shortcut icon" href="./favicon.png" />
         <meta property="og:site_name" content="Rodrigo Herzog" />
         <meta name="og:title" content="Rodrigo Herzog" />
         <meta property="og:type" content="website" />

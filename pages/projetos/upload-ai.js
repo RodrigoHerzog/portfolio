@@ -53,11 +53,11 @@ const Projeto = () => (
 
       <Grid templateColumns="repeat(1, 1fr)" gap={4} mb={4}>
         <WorkImage
-          src="/images/projetos/uploadai_1.png"
+          src="./images/projetos/uploadai_1.png"
           alt="Upload.ai website img 1"
         />
         <WorkImage
-          src="/images/projetos/uploadai_2.png"
+          src="./images/projetos/uploadai_2.png"
           alt="Upload.ai website img 2"
         />
       </Grid>

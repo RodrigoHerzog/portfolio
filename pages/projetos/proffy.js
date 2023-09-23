@@ -59,17 +59,17 @@ const Projeto = () => (
       </Heading>
 
       <WorkImage
-        src="/images/projetos/proffy_web_1.png"
+        src="./images/projetos/proffy_web_1.png"
         alt="Proffy website img 1"
       />
 
       <Grid templateColumns="repeat(2, 1fr)" gap={4} mb={4}>
         <WorkImage
-          src="/images/projetos/proffy_web_2.png"
+          src="./images/projetos/proffy_web_2.png"
           alt="Proffy website img 2"
         />
         <WorkImage
-          src="/images/projetos/proffy_web_3.png"
+          src="./images/projetos/proffy_web_3.png"
           alt="Proffy website img 3"
         />
       </Grid>
@@ -80,15 +80,15 @@ const Projeto = () => (
 
       <Grid templateColumns="repeat(3, 1fr)" gap={4} mb={4}>
         <WorkImage
-          src="/images/projetos/proffy_mobile_1.png"
+          src="./images/projetos/proffy_mobile_1.png"
           alt="Proffy mobile app img 1"
         />
         <WorkImage
-          src="/images/projetos/proffy_mobile_2.png"
+          src="./images/projetos/proffy_mobile_2.png"
           alt="Proffy mobile app img 2"
         />
         <WorkImage
-          src="/images/projetos/proffy_mobile_3.png"
+          src="./images/projetos/proffy_mobile_3.png"
           alt="Proffy mobile app img 3"
         />
       </Grid>

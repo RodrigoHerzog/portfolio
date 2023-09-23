@@ -74,7 +74,7 @@ const VoxelCmd = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/cmd.glb', {
+      loadGLTFModel(scene, './cmd.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
