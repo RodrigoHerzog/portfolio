@@ -11,8 +11,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/projeto'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
-import uploadai1Img from '../../public/images/projetos/uploadai_1.png'
-import uploadai2Img from '../../public/images/projetos/uploadai_2.png'
+import { assetPrefix } from '../../next.config'
 
 const Projeto = () => (
   <Layout title="Upload.ai">
@@ -54,8 +53,14 @@ const Projeto = () => (
       </Heading>
 
       <Grid templateColumns="repeat(1, 1fr)" gap={4} mb={4}>
-        <WorkImage src={uploadai1Img} alt="Upload.ai website img 1" />
-        <WorkImage src={uploadai2Img} alt="Upload.ai website img 2" />
+        <WorkImage
+          src={`${assetPrefix}/images/projetos/uploadai_1.png`}
+          alt="Upload.ai website img 1"
+        />
+        <WorkImage
+          src={`${assetPrefix}/images/projetos/uploadai_2.png`}
+          alt="Upload.ai website img 2"
+        />
       </Grid>
     </Container>
   </Layout>

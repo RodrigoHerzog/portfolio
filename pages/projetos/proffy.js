@@ -11,12 +11,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/projeto'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
-import proffywebsite1Img from '../../public/images/projetos/proffy_web_1.png'
-import proffywebsite2Img from '../../public/images/projetos/proffy_web_2.png'
-import proffywebsite3Img from '../../public/images/projetos/proffy_web_3.png'
-import proffymobile1Img from '../../public/images/projetos/proffy_mobile_1.png'
-import proffymobile2Img from '../../public/images/projetos/proffy_mobile_2.png'
-import proffymobile3Img from '../../public/images/projetos/proffy_mobile_3.png'
+import { assetPrefix } from '../../next.config'
 
 const Projeto = () => (
   <Layout title="Proffy">
@@ -64,11 +59,20 @@ const Projeto = () => (
         Website
       </Heading>
 
-      <WorkImage src={proffywebsite1Img} alt="Proffy website img 1" />
+      <WorkImage
+        src={`${assetPrefix}/images/projetos/proffy_web_1.png`}
+        alt="Proffy website img 1"
+      />
 
       <Grid templateColumns="repeat(2, 1fr)" gap={4} mb={4}>
-        <WorkImage src={proffywebsite2Img} alt="Proffy website img 2" />
-        <WorkImage src={proffywebsite3Img} alt="Proffy website img 3" />
+        <WorkImage
+          src={`${assetPrefix}/images/projetos/proffy_web_2.png`}
+          alt="Proffy website img 2"
+        />
+        <WorkImage
+          src={`${assetPrefix}/images/projetos/proffy_web_3.png`}
+          alt="Proffy website img 3"
+        />
       </Grid>
 
       <Heading size="md" textAlign="center" mb={4}>
@@ -76,9 +80,18 @@ const Projeto = () => (
       </Heading>
 
       <Grid templateColumns="repeat(3, 1fr)" gap={4} mb={4}>
-        <WorkImage src={proffymobile1Img} alt="Proffy mobile app img 1" />
-        <WorkImage src={proffymobile2Img} alt="Proffy mobile app img 2" />
-        <WorkImage src={proffymobile3Img} alt="Proffy mobile app img 3" />
+        <WorkImage
+          src={`${assetPrefix}/images/projetos/proffy_mobile_1.png`}
+          alt="Proffy mobile app img 1"
+        />
+        <WorkImage
+          src={`${assetPrefix}/images/projetos/proffy_mobile_2.png`}
+          alt="Proffy mobile app img 2"
+        />
+        <WorkImage
+          src={`${assetPrefix}/images/projetos/proffy_mobile_3.png`}
+          alt="Proffy mobile app img 3"
+        />
       </Grid>
     </Container>
   </Layout>

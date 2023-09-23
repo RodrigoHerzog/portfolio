@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 import { CmdSpinner, CmdContainer } from './voxel-cmd-loader'
+import { assetPrefix } from '../next.config'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -74,7 +75,7 @@ const VoxelCmd = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, './cmd.glb', {
+      loadGLTFModel(scene, `${assetPrefix}/cmd.glb`, {
         receiveShadow: false,
         castShadow: false
       }).then(() => {

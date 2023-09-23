@@ -2,8 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import footprintImg from '../public/images/footprint.png'
-import darkFootprintImg from '../public/images/footprint-dark.png'
+import { assetPrefix } from '../next.config'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -24,7 +23,10 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const footPrintImg = useColorModeValue(footprintImg, darkFootprintImg)
+  const footPrintImg = `${assetPrefix}${useColorModeValue(
+    '/images/footprint.png',
+    '/images/footprint-dark.png'
+  )}`
 
   return (
     <Link href="/">

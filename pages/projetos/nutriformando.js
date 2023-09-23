@@ -11,12 +11,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/projeto'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
-import nutriformando1Img from '../../public/images/projetos/nutriformando_1.jpg'
-import nutriformando2Img from '../../public/images/projetos/nutriformando_2.jpg'
-import nutriformando3Img from '../../public/images/projetos/nutriformando_3.jpg'
-import nutriformando4Img from '../../public/images/projetos/nutriformando_4.jpg'
-import nutriformando5Img from '../../public/images/projetos/nutriformando_5.jpg'
-import nutriformando6Img from '../../public/images/projetos/nutriformando_6.jpg'
+import { assetPrefix } from '../../next.config'
 
 const Projeto = () => (
   <Layout title="NutriFormando">
@@ -56,27 +51,27 @@ const Projeto = () => (
 
       <Grid templateColumns="repeat(3, 1fr)" gap={4} mb={4}>
         <WorkImage
-          src={nutriformando1Img}
+          src={`${assetPrefix}/images/projetos/nutriformando_1.jpg`}
           alt="NutriFormando mobile app img 1"
         />
         <WorkImage
-          src={nutriformando2Img}
+          src={`${assetPrefix}/images/projetos/nutriformando_2.jpg`}
           alt="NutriFormando mobile app img 2"
         />
         <WorkImage
-          src={nutriformando3Img}
+          src={`${assetPrefix}/images/projetos/nutriformando_3.jpg`}
           alt="NutriFormando mobile app img 3"
         />
         <WorkImage
-          src={nutriformando4Img}
+          src={`${assetPrefix}/images/projetos/nutriformando_4.jpg`}
           alt="NutriFormando mobile app img 4"
         />
         <WorkImage
-          src={nutriformando5Img}
+          src={`${assetPrefix}/images/projetos/nutriformando_5.jpg`}
           alt="NutriFormando mobile app img 5"
         />
         <WorkImage
-          src={nutriformando6Img}
+          src={`${assetPrefix}/images/projetos/nutriformando_6.jpg`}
           alt="NutriFormando mobile app img 6"
         />
       </Grid>
