@@ -50,27 +50,27 @@ const Projeto = () => (
 
       <Grid templateColumns="repeat(3, 1fr)" gap={4} mb={4}>
         <WorkImage
-          src="./images/projetos/nutriformando_1.jpg"
+          src="images/projetos/nutriformando_1.jpg"
           alt="NutriFormando mobile app img 1"
         />
         <WorkImage
-          src="./images/projetos/nutriformando_2.jpg"
+          src="images/projetos/nutriformando_2.jpg"
           alt="NutriFormando mobile app img 2"
         />
         <WorkImage
-          src="./images/projetos/nutriformando_3.jpg"
+          src="images/projetos/nutriformando_3.jpg"
           alt="NutriFormando mobile app img 3"
         />
         <WorkImage
-          src="./images/projetos/nutriformando_4.jpg"
+          src="images/projetos/nutriformando_4.jpg"
           alt="NutriFormando mobile app img 4"
         />
         <WorkImage
-          src="./images/projetos/nutriformando_5.jpg"
+          src="images/projetos/nutriformando_5.jpg"
           alt="NutriFormando mobile app img 5"
         />
         <WorkImage
-          src="./images/projetos/nutriformando_6.jpg"
+          src="images/projetos/nutriformando_6.jpg"
           alt="NutriFormando mobile app img 6"
         />
       </Grid>

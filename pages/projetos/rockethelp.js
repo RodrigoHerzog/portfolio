@@ -47,27 +47,27 @@ const Projeto = () => (
 
       <Grid templateColumns="repeat(3, 1fr)" gap={4} mb={4}>
         <WorkImage
-          src="./images/projetos/rockethelp_1.png"
+          src="images/projetos/rockethelp_1.png"
           alt="RocketHelp mobile app img 1"
         />
         <WorkImage
-          src="./images/projetos/rockethelp_2.png"
+          src="images/projetos/rockethelp_2.png"
           alt="RocketHelp mobile app img 2"
         />
         <WorkImage
-          src="./images/projetos/rockethelp_3.png"
+          src="images/projetos/rockethelp_3.png"
           alt="RocketHelp mobile app img 3"
         />
         <WorkImage
-          src="./images/projetos/rockethelp_4.png"
+          src="images/projetos/rockethelp_4.png"
           alt="RocketHelp mobile app img 4"
         />
         <WorkImage
-          src="./images/projetos/rockethelp_5.png"
+          src="images/projetos/rockethelp_5.png"
           alt="RocketHelp mobile app img 5"
         />
         <WorkImage
-          src="./images/projetos/rockethelp_6.png"
+          src="images/projetos/rockethelp_6.png"
           alt="RocketHelp mobile app img 6"
         />
       </Grid>
