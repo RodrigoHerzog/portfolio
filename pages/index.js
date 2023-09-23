@@ -66,8 +66,8 @@ const Home = () => {
         <Section delay={0.1}>
           <Paragraph>
             Brasileiro, desenvolvedor fullstack com mais de 5 anos de
-            experiência nas linguagens Javascript e Python, utilizando os
-            frameworks React, React Native, NodeJs e Firebase.
+            experiência com linguagens Javascript, Typescript e Python,
+            utilizando stacks React, React Native, Next e Node.
           </Paragraph>
           <Box align="center" my={6}>
             <NextLink href="/projetos" passHref scroll={false}>
