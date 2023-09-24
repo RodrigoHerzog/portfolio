@@ -16,7 +16,12 @@ import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 import Paragraph from '../components/paragraph'
 import Image from 'next/image'
-import { IoMailSharp, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import {
+  IoMailSharp,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoWhatsapp
+} from 'react-icons/io5'
 import { assetPrefix } from '../next.config'
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -176,6 +181,17 @@ const Home = () => {
                   leftIcon={<IoMailSharp />}
                 >
                   rodrigo.h.g.dev@gmail.com
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="tel:+5573998272557" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoWhatsapp />}
+                >
+                  +55 73 99827-2557
                 </Button>
               </Link>
             </ListItem>
