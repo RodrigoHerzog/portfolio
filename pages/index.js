@@ -71,7 +71,7 @@ const Home = () => {
         <Section delay={0.1}>
           <Paragraph>
             Brasileiro, desenvolvedor fullstack com mais de 5 anos de
-            experiência com linguagens Javascript, Typescript e Python,
+            experiência nas linguagens Javascript, Typescript e Python,
             utilizando stacks React, React Native, Next e Node.
           </Paragraph>
           <Box align="center" my={6}>
