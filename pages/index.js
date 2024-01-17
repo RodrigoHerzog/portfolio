@@ -130,7 +130,7 @@ const Home = () => {
             Idiomas
           </Heading>
           <BioSection>Português - fluente.</BioSection>
-          <BioSection>Inglês - intermediário.</BioSection>
+          <BioSection>Inglês - avançado.</BioSection>
         </Section>
 
         <Section delay={0.3}>
